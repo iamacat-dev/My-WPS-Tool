@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Advance WPS Tool</string>
+    <string name="wps_attack">WPS Attack</string>
+    <string name="system_information">System Information</string>
+    <string name="android_version">Android :</string>
+    <string name="device_status">Device Status :</string>
+    <string name="pixie_dust_pixie_force">Pixie Dust Pixie Force</string>
+    <string name="run">RUN</string>
+    <string name="online_bruteforce">Online BruteForce</string>
+    <string name="custom_pin">Custom PIN</string>
+    <string name="wps_push_button">WPS Push Button</string>
+    <string name="customized_attack_header">Customized Attack</string>
+    <string name="md_anis_raj">Tenda_AE59A0</string>
+    <string name="tenda_ae59a0">CC:2D:21:AE:59:A1</string>
+    <string name="attack">Attack</string>
+    <string name="md_moshiur_rahman">TP-Link_6A0C</string>
+    <string name="tp_link_6a0c">C0:C9:E3:25:6A:0C</string>
+    <string name="notice">Notice</string>
+    <string name="notice_info">Only for Rooted User. it is a WiFi Pentesting tool. This tool support Pixie Dust and Pixie Force and Pin BruteForce Attack.</string>
+    <string name="next_button">Next</string>
+    <string name="rooted">Rooted</string>
+    <string name="non_root">No Root</string>
+    <string name="setup_button">Setup Tools</string>
+</resources>

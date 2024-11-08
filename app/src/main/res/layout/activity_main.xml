@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|start"
+                android:text="@string/wps_attack"
+                android:textColor="#dea154"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Developer: AR Asiful Islam"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:layout_gravity="end"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/system_information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/deviceInfo"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:text="@string/android_version"
+                android:textColor="@color/Turquoise_Surf"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/getVersion"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:text="@string/device_status"
+                android:textColor="@color/Turquoise_Surf"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"/>
+            <TextView
+                android:id="@+id/getStatus"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/setup_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/setupButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/run"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@color/Turquoise_Surf"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/pixie_dust_pixie_force"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/pixieDust"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/run"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/online_bruteforce"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/bruteForce"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/run"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/custom_pin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/customPin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/run"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_240sdp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/wps_push_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/wps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/run"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:gravity="center"
+                android:text="@string/customized_attack_header"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
+                android:background="@drawable/bg_customized"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/md_anis_raj"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/tenda_ae59a0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/macAttack"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/attack"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/md_moshiur_rahman"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/tp_link_6a0c"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/macAttack2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+
+                    android:gravity="center"
+                    android:text="@string/attack"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:hapticFeedbackEnabled="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
